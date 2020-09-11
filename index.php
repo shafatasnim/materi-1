@@ -1,7 +1,7 @@
 <?php
 
 class Mobil {
-	public $merk, $tipe, $mesin, $max_speed;
+	private $merk, $tipe, $mesin, $max_speed;
 
 	public function cetakTipe(){
 		return $this->tipe;
@@ -12,7 +12,7 @@ class Mobil {
 	}
 }
 
-class BMW extends Mobil{
+class BMW extends Mobil {
  
 }
 
@@ -37,4 +37,4 @@ $tesla->max_speed = "280km/h";
 
 
 
-echo $tesla->kecepatanMaksimal();
+echo $tesla->merk;
